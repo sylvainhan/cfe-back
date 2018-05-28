@@ -1,0 +1,18 @@
+{
+  "name": "cfe-backonly",
+  "version": "0.0.0",
+  "description": "Description for cfe_backonly",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "devDependencies": {
+    "generator-jhipster-swagger-api-first": "1.0.1",
+    "generator-jhipster-swagger-cli": "2.0.5",
+    "generator-jhipster": "4.14.3"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  }
+}

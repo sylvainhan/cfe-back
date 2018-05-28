@@ -1,0 +1,14 @@
+version: '2'
+services:
+    cfe_backonly-app:
+        image: cfe_backonly
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://cfe_backonly-postgresql:5432/cfe_backonly
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    cfe_backonly-postgresql:
+        extends:
+            file: postgresql.yml
+            service: cfe_backonly-postgresql
